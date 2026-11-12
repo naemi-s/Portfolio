@@ -1,0 +1,33 @@
+html {
+  --vh: 1vh;
+}
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  --clipWidth: 50vmin;
+  --clipHeight: 25vmin;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+mask {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+  gap: 16px;
+  padding: 10px;
+  box-sizing:uaor;
+  background: #000;
+
+}
+@media (min-width: 1400px) {
+  mask {
+    grid-template-columns: repeat(3, 67vh);
+    grid-template-rows: repeat(4, 50vh);
+  }
+}
